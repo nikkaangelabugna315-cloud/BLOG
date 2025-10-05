@@ -1,0 +1,330 @@
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nikka Angela Bugna | Blog</title>
+
+  <!-- Bootstrap CSS (stable) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- ===== Navbar ===== -->
+    <header class="sticky-top shadow-sm">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Nikka Angela Bugna</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <button id="darkToggle" class="btn btn-sm ms-3"><i class="fas fa-moon"></i></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section id="home" class="hero-banner text-center text-white d-flex align-items-center">
+      <div class="container">
+        <!-- Profile Picture (Unsplash photo added) -->
+        <img src="logo.jpg"  
+            alt="Profile" class="profile-pic mb-3 animate-pic">
+
+        <h1 class="display-4 fw-bold">Welcome to My Blog</h1>
+        <p class="lead">Hi, I’m <strong>Nikka Angela Bugna</strong>. Sharing ideas, projects, and stories.</p>
+        <a href="#blog" class="btn btn-primary btn-lg mt-3">Explore Blog</a>
+      </div>
+    </section>
+
+   
+  <!-- ===== About Section ===== -->
+<section id="about" class="about-pretty py-5">
+  <div class="container d-flex flex-wrap align-items-center justify-content-center">
+
+    <!-- Profile Image -->
+    <div class="about-img">
+      <img src="logo.jpg" alt="Profile">
+    </div>
+
+    <!-- Text Content -->
+    <div class="about-text">
+      <h2>Hello, I’m <span>Nikka Angela Bugna</span> 🌸</h2>
+      <p class="tagline">Learning Web Development | Sharing Ideas | Blogging Journey</p>
+      <p>
+        
+      </p>
+
+      <!-- Buttons -->
+      <div class="about-buttons">
+        <a href="#portfolio" class="btn-pretty">✨ View Portfolio</a>
+        <a href="#contact" class="btn-outline-pretty">💌 Contact Me</a>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="pretty-icons mt-4">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Portfolio</h2>
+    <div class="row g-4">
+
+      <!-- Project One -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://picsum.photos/600/400?random=21" class="card-img-top" alt="Project 1" data-bs-toggle="modal" data-bs-target="#project1Modal" style="cursor:pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Project One</h5>
+            <p class="card-text"> a simple, user-friendly website that helps people remember to take their medicine on time.
+It uses a responsive layout.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://picsum.photos/600/400?random=22" class="card-img-top" alt="Project 2" data-bs-toggle="modal" data-bs-target="#project2Modal" style="cursor:pointer;">
+          <div class="card-body">
+            <h5 class="card-title">✨Project Two</h5>
+            <p class="card-text">This is a creative portfolio website. It highlights my design and development skills. The projects displayed show my creativity  .
+</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Three -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://picsum.photos/600/400?random=23" class="card-img-top" alt="Project 3" data-bs-toggle="modal" data-bs-target="#project3Modal" style="cursor:pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Project Three</h5>
+            <p class="card-text">A simple webpage layout using semantic HTML5 tags and CSS, designed with a header, sidebar, main content area, and footer.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PORTFOLIO MODALS ===== -->
+
+<!-- Project 1 Modal -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project One</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+         <img src="project-1.png" class="card-img-top" alt="Project 2">
+        <p>This project is MedRemind is a medication reminder app with a simple dashboard, push notifications, and easy medicine scheduling.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 2 Modal -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">✨Project Two</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="project-2.png" class="card-img-top" alt="Project 2">
+
+        <p>This portfolio showcases design and development skills, featuring creative layouts and branding concepts.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 3 Modal -->
+<div class="modal fade" id="project3Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project Three</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+         <img src="project-3.png" class="card-img-top" alt="Project 3">
+        <p>This website layout uses HTML5 tags like header, aside, main, and footer. The sidebar (aside) is for menus or extra content, and the main part shows the main information. CSS is used to arrange and style the sections so the page looks neat. This kind of layout is a basic design that many websites start with before adding more features..”.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Removed duplicate Project 3 modal that referenced non-existent images/project3.png -->
+
+<!-- Bootstrap JS (needed for modals) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Blog Section -->
+<section id="blog" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Latest Blog Posts</h2>
+    <div class="row g-4">
+
+      <!-- Blog Post One -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://picsum.photos/600/400?random=1" class="card-img-top" alt="Blog Post 1">
+          <div class="card-body">
+            <h5 class="card-title">✨Mistakes I Made as a Beginner Coder</h5>
+           
+            <p class="card-text">When I first started coding, I thought it would be easy. But soon I learned that mistakes are a normal part of the journey. In fact,
+               the mistakes I made helped me understand coding better. Here are some of the common errors I faced and what I learned from them.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#blog1Modal">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Post Two -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://picsum.photos/600/400?random=2" class="card-img-top" alt="Blog Post 2">
+          <div class="card-body">
+            <h5 class="card-title">✨ My Journey Learning HTML and CSS</h5>
+            <p class="card-text">When I first started learning web development, I began with HTML, the building blocks of every website. I learned how to create simple pages with headings, paragraphs, links, and images. It was exciting to see a plain text file turn into something that looked like a real web page.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#blog2Modal">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Post Three -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="https://picsum.photos/600/400?random=3" class="card-img-top" alt="Blog Post 3">
+          <div class="card-body">
+            <h5 class="card-title">Why Learning JavaScript Changed My Life as a student?</h5>
+            <p class="card-text">Learning JavaScript changed my life as a student because it helped me see new ways to solve problems. I can now make simple projects that really work on websites. It also gave me confidence to keep learning more about technology.
+  </p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#blog3Modal">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== BLOG MODALS ===== -->
+
+<!-- Blog 1 Modal -->
+<div class="modal fade" id="blog1Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">✨Mistakes I Made as a Beginner Coder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+         <img src="cover-1.jpg" class="card-img-top" alt="Blog Post 1">
+        <p>When I first started coding, I thought it would be easy, but I was wrong. I quickly found out that making mistakes is part of learning. Forgetting semicolons, broken CSS, and messy code were just some of my struggles. Each mistake taught me how to pay more attention and improve my skills. In the end, those errors helped me become a better coder step by step.
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Blog 2 Modal -->
+<div class="modal fade" id="blog2Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">My Journey Learning HTML and CSS  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+  <img src="nik-5.jpg" class="card-img-top" alt="Blog Post 2">
+        <p>Then I moved on to CSS, which taught me how to style my pages. I experimented with colors, fonts, and layouts, and soon my simple HTML pages became more creative and visually appealing. Discovering Flexbox and Grid made me realize how powerful CSS is for making responsive websites.
+
+Learning HTML and CSS gave me the confidence to start building my first projects, like a personal portfolio and a simple blog. It showed me that with just a little practice, I could turn my ideas into something I could share with the world..</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Blog 3 Modal -->
+<div class="modal fade" id="blog3Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Why Learning JavaScript Changed My Life</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+         <img src="nik-8.jpg" class="card-img-top" alt="Blog Post 3">
+        <p></p>
+  As a student, I never thought coding could become such an exciting part of my journey. Learning JavaScript opened a new world where I can turn my ideas into real, working projects instead of just writing notes or theories.
+With just a few lines of code, I can make buttons react, pages come alive, and websites feel more interactive. It made problem-solving fun and gave me confidence to keep exploring technology step by step.
+This is only the beginning, but I now believe that learning JavaScript is not just about coding—it’s about building my future one project at a time.    </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Removed duplicate blog modal block that referenced non-existent images/ files -->
+
+
+<!-- ===== Contact Section ===== -->
+<section id="contact" class="py-5 text-center bg-light">
+  <div class="container">
+    <h2 class="mb-4">Contact Me</h2>
+    <p class="mb-4">You can reach me directly through my Facebook account.</p>
+    <a href="https://www.facebook.com/share/16AS5wJVti/" target="_blank" class="btn btn-primary btn-lg">
+      <i class="fab fa-facebook"></i> Visit My Facebook
+    </a>
+  </div>
+</section>
+
+
+
+    <!-- ===== Footer ===== -->
+    <footer class="py-4 text-center">
+      <p>© 2025 <strong>Nikka Angela Bugna</strong>. All rights reserved.</p>
+      <a href="#home" id="backToTop" class="btn btn-secondary btn-sm">Back to Top</a>
+    </footer>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+  </body>
+  </html>

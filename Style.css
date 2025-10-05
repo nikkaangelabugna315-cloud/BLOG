@@ -1,0 +1,610 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navbar Links */
+nav a {
+  color: white; 
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Hover effect */
+nav a:hover {
+  background: #6ea1b0; /* orange highlight */
+  color: #fff;
+}
+
+/* Active link (for the current page) */
+nav a.active {
+  background: #4caf50; /* green */
+  color: #fff;
+}
+
+/* Hero Section */
+
+.hero-banner {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') 
+              no-repeat center center/cover;
+
+}
+
+/* About Section */
+.about-pretty {
+  background: linear-gradient(135deg, #ffe6f0, #e0f7ff);
+  padding: 100px 20px;
+}
+
+/* Container */
+.about-pretty .container {
+  max-width: 1100px;
+  gap: 40px;
+}
+
+/* Profile Image */
+.about-img img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid white;
+  box-shadow: 0 10px 35px rgb(73, 140, 158);
+  transition: transform 0.4s ease;
+}
+.about-img img:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+/* Text Section */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+.about-text h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.about-text h2 span {
+  color: #ff6f91;
+}
+.about-text .tagline {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.about-buttons {
+  margin-top: 20px;
+}
+.btn-pretty {
+  background: linear-gradient(90deg, #ff6f91, #ff9671);
+  border-radius: 50px;
+  padding: 0.7em 1.5em;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.btn-pretty:hover {
+  opacity: 0.9;
+}
+.btn-outline-pretty {
+  margin-left: 15px;
+  border: 2px solid #ff6f91;
+  border-radius: 50px;
+  padding: 0.7em 1.5em;
+  color: #ff6f91;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.btn-outline-pretty:hover {
+  background: #ff6f91;
+  color: white;
+}
+
+/* Social Icons */
+.pretty-icons a {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  color: #555;
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.pretty-icons a:hover {
+  background: linear-gradient(135deg, #ff6f91, #ff9671);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255,111,145,0.5);
+}
+/* 🌸 Light Mode (Default) */
+.about-pretty {
+  background: linear-gradient(135deg, #ffe6f0, #e0f7ff);
+  padding: 100px 20px;
+  color: #333;
+}
+.about-text h2 span {
+  color: #ff6f91;
+}
+.pretty-icons a {
+  background: white;
+  color: #555;
+}
+.pretty-icons a:hover {
+  background: linear-gradient(135deg, #ff6f91, #ff9671);
+  color: white;
+}
+
+/* 🌙 Dark Mode */
+body.dark-mode .about-pretty {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a40);
+  color: #eee;
+}
+
+body.dark-mode .about-text h2 span {
+  color: #ff85a2;
+}
+
+body.dark-mode .about-img img {
+  border: 6px solid #333;
+  box-shadow: 0 10px 35px rgba(255,255,255,0.08);
+}
+
+body.dark-mode .btn-pretty {
+  background: linear-gradient(90deg, #ff6f91, #ff9671);
+  color: white;
+}
+body.dark-mode .btn-outline-pretty {
+  border: 2px solid #ff6f91;
+  color: #ff6f91;
+}
+body.dark-mode .btn-outline-pretty:hover {
+  background: #ff6f91;
+  color: white;
+}
+
+body.dark-mode .pretty-icons a {
+  background: #2a2a40;
+  color: #ddd;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+body.dark-mode .pretty-icons a:hover {
+  background: linear-gradient(135deg, #ff6f91, #ff9671);
+  color: white;
+  box-shadow: 0 6px 20px rgba(255,111,145,0.5);
+}
+
+
+/* Profile Picture */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 20px rgb(73, 117, 165);
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: transform 0.6s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+
+.animate-pic.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cards */
+.portfolio-card, .blog-card {
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-card:hover, .blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
+.contact-form input, .contact-form textarea {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#contact h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+#contact a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #0d6efd; /* Bootstrap primary blue */
+}
+
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: #10bda0;
+}
+body.dark .navbar, body.dark .bg-light {
+  background: #1f1f1f !important;
+}
+body.dark .card {
+  background: #2a2a2a;
+  color: #eee;
+}
+body.dark .btn-outline-dark {
+  border-color: #0b2b8e;
+  color: #eee;
+}
+body.dark .btn-outline-dark:hover {
+  background: #eee;
+  color: #000;
+}
+
+/* Back to Top */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Ensure Bootstrap components follow dark-mode */
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+body.dark-mode .navbar, body.dark-mode .bg-light {
+  background: #1f1f1f !important;
+  color: #eee;
+}
+body.dark-mode .card {
+  background: #222;
+  color: #eee;
+  border-color: rgba(255,255,255,0.04);
+}
+body.dark-mode .card .card-body, body.dark-mode .card .card-text {
+  color: #ddd;
+}
+body.dark-mode .btn-outline-pretty {
+  border-color: #ff6f91;
+  color: #ff6f91;
+}
+
+/* Ensure Bootstrap components follow dark-mode */
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+body.dark-mode .navbar, body.dark-mode .bg-light {
+  background: #1f1f1f !important;
+  color: #eee;
+}
+body.dark-mode .card {
+  background: #222;
+  color: #eee;
+  border-color: rgba(255,255,255,0.04);
+}
+body.dark-mode .card .card-body, body.dark-mode .card .card-text {
+  color: #ddd;
+}
+body.dark-mode .btn-outline-pretty {
+  border-color: #ff6f91;
+  color: #ff6f91;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navbar Links */
+nav a {
+  color: white; 
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Hover effect */
+nav a:hover {
+  background: #6ea1b0; /* orange highlight */
+  color: #fff;
+}
+
+/* Active link (for the current page) */
+nav a.active {
+  background: #4caf50; /* green */
+  color: #fff;
+}
+
+/* Hero Section */
+
+.hero-banner {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') 
+              no-repeat center center/cover;
+
+}
+
+/* About Section */
+.about-pretty {
+  background: linear-gradient(135deg, #ffe6f0, #e0f7ff);
+  padding: 100px 20px;
+}
+
+/* Container */
+.about-pretty .container {
+  max-width: 1100px;
+  gap: 40px;
+}
+
+/* Profile Image */
+.about-img img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid white;
+  box-shadow: 0 10px 35px rgb(73, 140, 158);
+  transition: transform 0.4s ease;
+}
+.about-img img:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+/* Text Section */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+.about-text h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.about-text h2 span {
+  color: #ff6f91;
+}
+.about-text .tagline {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.about-buttons {
+  margin-top: 20px;
+}
+.btn-pretty {
+  background: linear-gradient(90deg, #ff6f91, #ff9671);
+  border-radius: 50px;
+  padding: 0.7em 1.5em;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.btn-pretty:hover {
+  opacity: 0.9;
+}
+.btn-outline-pretty {
+  margin-left: 15px;
+  border: 2px solid #ff6f91;
+  border-radius: 50px;
+  padding: 0.7em 1.5em;
+  color: #ff6f91;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.btn-outline-pretty:hover {
+  background: #ff6f91;
+  color: white;
+}
+
+/* Social Icons */
+.pretty-icons a {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  color: #555;
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.pretty-icons a:hover {
+  background: linear-gradient(135deg, #ff6f91, #ff9671);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255,111,145,0.5);
+}
+/* 🌸 Light Mode (Default) */
+.about-pretty {
+  background: linear-gradient(135deg, #ffe6f0, #e0f7ff);
+  padding: 100px 20px;
+  color: #333;
+}
+.about-text h2 span {
+  color: #ff6f91;
+}
+.pretty-icons a {
+  background: white;
+  color: #555;
+}
+.pretty-icons a:hover {
+  background: linear-gradient(135deg, #ff6f91, #ff9671);
+  color: white;
+}
+
+/* 🌙 Dark Mode */
+body.dark-mode .about-pretty {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a40);
+  color: #eee;
+}
+
+body.dark-mode .about-text h2 span {
+  color: #ff85a2;
+}
+
+body.dark-mode .about-img img {
+  border: 6px solid #333;
+  box-shadow: 0 10px 35px rgba(255,255,255,0.08);
+}
+
+body.dark-mode .btn-pretty {
+  background: linear-gradient(90deg, #ff6f91, #ff9671);
+  color: white;
+}
+body.dark-mode .btn-outline-pretty {
+  border: 2px solid #ff6f91;
+  color: #ff6f91;
+}
+body.dark-mode .btn-outline-pretty:hover {
+  background: #ff6f91;
+  color: white;
+}
+
+body.dark-mode .pretty-icons a {
+  background: #2a2a40;
+  color: #ddd;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+body.dark-mode .pretty-icons a:hover {
+  background: linear-gradient(135deg, #ff6f91, #ff9671);
+  color: white;
+  box-shadow: 0 6px 20px rgba(255,111,145,0.5);
+}
+
+
+/* Profile Picture */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 20px rgb(73, 117, 165);
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: transform 0.6s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+
+.animate-pic.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cards */
+.portfolio-card, .blog-card {
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-card:hover, .blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
+.contact-form input, .contact-form textarea {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#contact h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+#contact a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #0d6efd; /* Bootstrap primary blue */
+}
+
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: #10bda0;
+}
+body.dark .navbar, body.dark .bg-light {
+  background: #1f1f1f !important;
+}
+body.dark .card {
+  background: #2a2a2a;
+  color: #eee;
+}
+body.dark .btn-outline-dark {
+  border-color: #0b2b8e;
+  color: #eee;
+}
+body.dark .btn-outline-dark:hover {
+  background: #eee;
+  color: #000;
+}
+
+/* Back to Top */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
